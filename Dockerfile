@@ -25,6 +25,6 @@ RUN mkdir -p $HOME/.config $HOME/.SpaceVim.d $HOME/workdir
 COPY init.toml $HOME/.SpaceVim.d
 RUN curl -sLf https://spacevim.org/install.sh | bash && \
     nvim --headless +'call dein#install()' +qall
-ENTRYPOINT ["/usr/bin/nvim"]
+ENTRYPOINT ["/usr/bin/nvim","/home/spacevim/workdir"]
 
 

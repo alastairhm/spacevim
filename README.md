@@ -6,6 +6,10 @@
 
 
 ```bash
-docker run --rm -ti -v $(pwd):/home/spacevin/workdir alastairhm/svim
+docker run --rm -ti -v $(pwd):/home/spacevim/workdir alastairhm/spacevim
+```
+
+```bash
+alias svim='docker run --rm -ti -v $(pwd):/home/spacevim/workdir alastairhm/spacevim'
 ```
 
