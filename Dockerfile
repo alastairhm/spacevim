@@ -1,4 +1,4 @@
-FROM ubuntu:21.10 as base
+FROM ubuntu:20.04 as base
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -26,5 +26,6 @@ RUN mkdir -p $HOME/.config $HOME/.SpaceVim.d $HOME/workdir
 COPY init.toml $HOME/.SpaceVim.d
 RUN curl -sLf https://spacevim.org/install.sh | bash && \
     nvim --headless +'call dein#install()' +qall
+WORKDIR $HOME/workdir
 ENTRYPOINT ["/usr/bin/nvim"]
 
