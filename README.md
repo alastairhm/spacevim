@@ -9,10 +9,12 @@
 docker run --rm -ti -v $(pwd):/home/spacevim/workdir alastairhm/spacevim
 ```
 
+Alias
 ```bash
-alias svim='docker run --rm -ti -v $(pwd):/home/spacevim/workdir alastairhm/spacevim'
+alias spv='docker run --rm -ti -v $(pwd):/home/spacevim/workdir alastairhm/spacevim'
 ```
 
+Bash Function
 ```bash
 spv ()
 {
@@ -23,4 +25,16 @@ spv ()
     docker run --rm -ti -v $(pwd):/home/spacevim/workdir alastairhm/spacevim
   fi
 }
+```
+
+Fish Function
+```fish
+function spv
+    if test (count $argv) -gt 0
+        echo "File $argv[1]"
+        docker run --rm -ti -v (pwd):/home/spacevim/workdir alastairhm/spacevim $argv[1]
+    else
+        docker run --rm -ti -v (pwd):/home/spacevim/workdir alastairhm/spacevim
+    end
+end
 ```
