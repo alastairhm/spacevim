@@ -20,9 +20,9 @@ spv ()
 {
   if [ $# -eq 1 ]
   then
-    docker run --rm -ti -v $(pwd):/home/spacevim/workdir alastairhm/spacevim workdir/$1
+    docker run --rm -ti -v $(pwd):/home/spacevim/workdir ghcr.io/alastairhm/spacevim:latest workdir/$1
   else
-    docker run --rm -ti -v $(pwd):/home/spacevim/workdir alastairhm/spacevim
+    docker run --rm -ti -v $(pwd):/home/spacevim/workdir ghcr.io/alastairhm/spacevim:latest
   fi
 }
 ```
@@ -32,9 +32,9 @@ Fish Function
 function spv
     if test (count $argv) -gt 0
         echo "File $argv[1]"
-        docker run --rm -ti -v (pwd):/home/spacevim/workdir alastairhm/spacevim $argv[1]
+        docker run --rm -ti -v (pwd):/home/spacevim/workdir ghcr.io/alastairhm/spacevim:latest $argv[1]
     else
-        docker run --rm -ti -v (pwd):/home/spacevim/workdir alastairhm/spacevim
+        docker run --rm -ti -v (pwd):/home/spacevim/workdir ghcr.io/alastairhm/spacevim:latest
     end
 end
 ```
