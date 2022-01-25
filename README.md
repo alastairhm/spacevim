@@ -4,6 +4,10 @@
 
 [![](http://dockeri.co/image/alastairhm/spacevim)](https://index.docker.io/u/alastairhm/spacevim/)
 
+[![Deploy Docker](https://github.com/alastairhm/spacevim/actions/workflows/deploy.yml/badge.svg)](https://github.com/alastairhm/spacevim/actions/workflows/deploy.yml)
+
+[![Docker Image CI](https://github.com/alastairhm/spacevim/actions/workflows/docker-image.yml/badge.svg)](https://github.com/alastairhm/spacevim/actions/workflows/docker-image.yml)
+
 
 ```bash
 docker run --rm -ti -v $(pwd):/home/spacevim/workdir alastairhm/spacevim

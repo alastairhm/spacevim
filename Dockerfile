@@ -6,6 +6,7 @@ RUN apt update && apt -y upgrade && apt -y install curl git build-essential pip 
     git clone https://github.com/Shougo/vimproc.vim.git ~/.vim/bundle/vimproc.vim && \
     cd ~/.vim/bundle/vimproc.vim && \
     make && \
+    pip3 install --upgrade msgpack && \
     rm -rf /var/lib/apt/lists/*
 
 FROM base
