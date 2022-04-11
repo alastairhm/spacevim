@@ -15,4 +15,4 @@ Dates in this file are in format of YYYY-MM-DD (2019-12-13 means 13th of Decembe
 * Tidy up a few things
 * Switch to LTS image
 * Update Readme
-
+* Ubuntu 21.04
