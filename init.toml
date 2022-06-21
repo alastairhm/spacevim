@@ -38,3 +38,12 @@ auto_completion_tab_key_behavior = "cycle"
 name = 'shell'
 default_position = 'top'
 default_height = 30
+
+[[layers]]
+name = 'lang#python'
+
+[[layers]]
+    name = 'git'
+[[layers]]
+    name = 'VersionControl'
+
