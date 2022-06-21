@@ -2,21 +2,21 @@ FROM ubuntu:21.04 as base
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt update && apt -y upgrade && apt -y install curl git build-essential pip neovim && \
+RUN apt-get update && apt-get -y upgrade && apt-get -y install --no-install-recommends curl git build-essential pip neovim && \
     git clone https://github.com/Shougo/vimproc.vim.git ~/.vim/bundle/vimproc.vim && \
     cd ~/.vim/bundle/vimproc.vim && \
     make && \
-    pip3 install --upgrade msgpack && \
+    pip3 install --no-cache-dir --upgrade msgpack && \
     rm -rf /var/lib/apt/lists/*
 
 FROM base
 ENV HOME /home/spacevim
 
-RUN groupdel users                                              \
-  && groupadd -r spacevim                                       \
-  && useradd --create-home --home-dir $HOME                     \
-             -r -g spacevim                                     \
-             spacevim
+RUN groupdel users                            \
+    && groupadd -r spacevim                   \
+    && useradd --create-home --home-dir $HOME \
+            -r -g spacevim                    \
+            spacevim
 
 USER spacevim
 
