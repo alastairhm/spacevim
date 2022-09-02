@@ -8,6 +8,8 @@ Dates in this file are in format of YYYY-MM-DD (2019-12-13 means 13th of Decembe
 
 ## [Unreleased]
 
+## [v1.0.0](https://github.com/alastairhm/spacevim/releases/tag/v1.0.0) 2022-09-02
+
 ### Added
 
 * GitHub Actions
@@ -15,4 +17,4 @@ Dates in this file are in format of YYYY-MM-DD (2019-12-13 means 13th of Decembe
 * Tidy up a few things
 * Switch to LTS image
 * Update Readme
-* Ubuntu 21.04
+* Ubuntu 22.04
