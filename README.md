@@ -2,11 +2,14 @@
 
 ## A Docker image SpaceVim with NeoVim
 
+[SpaceVim](https://spacevim.org/) running on [NeoVim](http://neovim.io/) inside an [Ubuntu](https://ubuntu.com/) Docker image.
+
 [![](http://dockeri.co/image/alastairhm/spacevim)](https://index.docker.io/u/alastairhm/spacevim/)
 
 [![Deploy Docker](https://github.com/alastairhm/spacevim/actions/workflows/deploy.yml/badge.svg)](https://github.com/alastairhm/spacevim/actions/workflows/deploy.yml)
 
 [![Docker Image CI](https://github.com/alastairhm/spacevim/actions/workflows/docker-image.yml/badge.svg)](https://github.com/alastairhm/spacevim/actions/workflows/docker-image.yml)
+
 
 
 ```bash
