@@ -40,10 +40,17 @@ default_position = 'top'
 default_height = 30
 
 [[layers]]
-name = 'lang#python'
-
+    name = 'lang#python'
 [[layers]]
     name = 'git'
 [[layers]]
     name = 'VersionControl'
+[[layers]]
+    name = 'lang#dockerfile'
+[[layers]]
+    name = 'lang#go'
+[[layers]]
+    name = 'lang#toml'
+[[layers]]
+    name = 'lang#sh'
 
