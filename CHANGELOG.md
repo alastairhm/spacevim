@@ -8,6 +8,12 @@ Dates in this file are in format of YYYY-MM-DD (2019-12-13 means 13th of Decembe
 
 ## [Unreleased]
 
+* Add neovim Python module
+
+## [v1.1.1](https://github.com/alastairhm/spacevim/releases/tag/v1.0.0) 2022-09-08
+
+* Build image using Git tag
+
 ## [v1.1.0](https://github.com/alastairhm/spacevim/releases/tag/v1.0.0) 2022-09-08
 
 * More language layers

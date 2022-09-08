@@ -6,7 +6,7 @@ RUN apt-get update && apt-get -y upgrade && apt-get -y install --no-install-reco
     git clone https://github.com/Shougo/vimproc.vim.git ~/.vim/bundle/vimproc.vim && \
     cd ~/.vim/bundle/vimproc.vim && \
     make && \
-    pip3 install --no-cache-dir --upgrade msgpack && \
+    pip3 install --no-cache-dir --upgrade msgpack neovim && \
     rm -rf /var/lib/apt/lists/*
 
 FROM base
