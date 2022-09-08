@@ -2,24 +2,35 @@
 
 ## A Docker image SpaceVim with NeoVim
 
+### About
+
 [SpaceVim](https://spacevim.org/) running on [NeoVim](http://neovim.io/) inside an [Ubuntu](https://ubuntu.com/) Docker image.
 
-[![](http://dockeri.co/image/alastairhm/spacevim)](https://index.docker.io/u/alastairhm/spacevim/)
+[![Docker Hub](https://index.docker.io/u/alastairhm/spacevim/)
+[Gitlab Package](https://github.com/users/alastairhm/packages/container/package/spacevim)
+
+
+### Build Status
 
 [![Deploy Docker](https://github.com/alastairhm/spacevim/actions/workflows/deploy.yml/badge.svg)](https://github.com/alastairhm/spacevim/actions/workflows/deploy.yml)
 
 [![Docker Image CI](https://github.com/alastairhm/spacevim/actions/workflows/docker-image.yml/badge.svg)](https://github.com/alastairhm/spacevim/actions/workflows/docker-image.yml)
 
+### Instructions
 
+Run to edit current directory
 
 ```bash
 docker run --rm -ti -v $(pwd):/home/spacevim/workdir alastairhm/spacevim
 ```
 
-Alias
+Setup as an Alias
+
 ```bash
 alias spv='docker run --rm -ti -v $(pwd):/home/spacevim/workdir alastairhm/spacevim'
 ```
+
+Functions to either edit the directory or just one file.   
 
 Bash Function
 ```bash
