@@ -6,7 +6,7 @@
 
 [SpaceVim](https://spacevim.org/) running on [NeoVim](http://neovim.io/) inside an [Ubuntu](https://ubuntu.com/) Docker image.
 
-[![Docker Hub](https://index.docker.io/u/alastairhm/spacevim/)
+[Docker Hub](https://index.docker.io/u/alastairhm/spacevim/)
 [Gitlab Package](https://github.com/users/alastairhm/packages/container/package/spacevim)
 
 
