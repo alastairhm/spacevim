@@ -1,4 +1,4 @@
-# SpaceVIm
+# SpaceVim Docker
 
 ## A Docker image SpaceVim with NeoVim
 
@@ -7,6 +7,7 @@
 [SpaceVim](https://spacevim.org/) running on [NeoVim](http://neovim.io/) inside an [Ubuntu](https://ubuntu.com/) Docker image.
 
 [Docker Hub](https://hub.docker.com/r/alastairhm/spacevim)
+
 [Gitlab Package](https://github.com/users/alastairhm/packages/container/package/spacevim)
 
 
