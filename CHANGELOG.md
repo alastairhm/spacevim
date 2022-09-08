@@ -8,6 +8,8 @@ Dates in this file are in format of YYYY-MM-DD (2019-12-13 means 13th of Decembe
 
 ## [Unreleased]
 
+* More language layers
+
 ## [v1.0.0](https://github.com/alastairhm/spacevim/releases/tag/v1.0.0) 2022-09-02
 
 ### Added
