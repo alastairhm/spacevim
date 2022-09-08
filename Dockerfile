@@ -24,8 +24,7 @@ WORKDIR $HOME
 ENV PATH "$HOME/.local/bin:${PATH}"
 
 RUN mkdir -p $HOME/.config $HOME/.SpaceVim.d $HOME/workdir
-COPY init.toml $HOME/.SpaceVim.d
-RUN chown spacevim: $HOME/.SpaceVim.d/init.toml
+COPY --chown=spacevim:spacevim init.toml $HOME/.SpaceVim.d
 RUN curl -sLf https://spacevim.org/install.sh | bash && \
     nvim --headless +'call dein#install()' +qall
 WORKDIR $HOME/workdir
