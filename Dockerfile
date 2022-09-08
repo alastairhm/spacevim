@@ -1,15 +1,5 @@
-FROM ubuntu:22.04 as base
+FROM ghcr.io/alastairhm/ubuntu-base:latest
 
-ENV DEBIAN_FRONTEND=noninteractive
-
-RUN apt-get update && apt-get -y upgrade && apt-get -y install --no-install-recommends curl git build-essential pip neovim && \
-    git clone https://github.com/Shougo/vimproc.vim.git ~/.vim/bundle/vimproc.vim && \
-    cd ~/.vim/bundle/vimproc.vim && \
-    make && \
-    pip3 install --no-cache-dir --upgrade msgpack neovim && \
-    rm -rf /var/lib/apt/lists/*
-
-FROM base
 ENV HOME /home/spacevim
 
 RUN groupdel users                            \
