@@ -54,3 +54,7 @@ default_height = 30
 [[layers]]
     name = 'lang#sh'
 
+[[custom_plugins]]
+    repo = 'hashivim/vim-terraform'
+    merged = false
+
