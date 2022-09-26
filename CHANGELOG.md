@@ -11,6 +11,7 @@ Dates in this file are in format of YYYY-MM-DD (2019-12-13 means 13th of Decembe
 * Add neovim Python module
 * Shift Ubuntu base to seperate image
 * vim-terraform plugin
+* vim-gitgutter plugin
 
 ## [v1.1.1](https://github.com/alastairhm/spacevim/releases/tag/v1.0.0) 2022-09-08
 
