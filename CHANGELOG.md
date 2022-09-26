@@ -8,16 +8,18 @@ Dates in this file are in format of YYYY-MM-DD (2019-12-13 means 13th of Decembe
 
 ## [Unreleased]
 
+## [v1.2.0](https://github.com/alastairhm/spacevim/releases/tag/v1.2.0) 2022-09-26
+
 * Add neovim Python module
 * Shift Ubuntu base to seperate image
 * vim-terraform plugin
 * vim-gitgutter plugin
 
-## [v1.1.1](https://github.com/alastairhm/spacevim/releases/tag/v1.0.0) 2022-09-08
+## [v1.1.1](https://github.com/alastairhm/spacevim/releases/tag/v1.1.1) 2022-09-08
 
 * Build image using Git tag
 
-## [v1.1.0](https://github.com/alastairhm/spacevim/releases/tag/v1.0.0) 2022-09-08
+## [v1.1.0](https://github.com/alastairhm/spacevim/releases/tag/v1.1.0) 2022-09-08
 
 * More language layers
 
