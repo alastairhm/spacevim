@@ -1,4 +1,4 @@
-FROM ghcr.io/alastairhm/ubuntu-base:v1.1.0
+FROM ghcr.io/alastairhm/ubuntu-base:1.1.0
 
 ENV HOME /home/spacevim
 
